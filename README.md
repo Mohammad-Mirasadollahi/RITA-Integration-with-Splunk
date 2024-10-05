@@ -87,7 +87,7 @@ rm -rf TA-RITA-Splunk.tar.gz
 ```
 /opt/splunk/bin/./splunk restart
 ```
-**4-** RITA Data in Splunk:
+**4-** RITA Data in Splunk:\
 From the search and reporting app, run the following command after the RITA file is downloaded.
 ```
 | inputlookup rita_intel
