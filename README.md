@@ -73,20 +73,22 @@ wget https://github.com/Mohammad-Mirasadollahi/RITA-Integration-with-Splunk/rele
 ```
 
 **2-** Transfer and extract the addon with the following commands (assuming the default Splunk installation path):
-```bash
+```
 mv TA-RITA-Splunk.tar.gz /opt/splunk/etc/apps/
 cd /opt/splunk/etc/apps/
 tar xzvf TA-RITA-Splunk.tar.gz
 rm -rf TA-RITA-Splunk.tar.gz
 ```
 
-**Note:** Open the `savedsearches.conf` file inside the `TA-RITA-Splunk/default` folder and modify the IP in the `url` field according to your organization’s setup. This IP should be the Web Server IP that we set up in the previous step.
+**Note:** Open the `savedsearches.conf` file inside the `TA-RITA-Splunk/default` folder and modify the IP in the `url` field according to your organization’s setup. This IP should be the Web Server IP that we set up in the previous step.\
+**Note:** From `savedsearches.conf` you can change `cron_schedule` based on your RITA configuration. Default is every 10 minutes.
 
 **3-** Finally, restart the Splunk:
-```bash
+```
 /opt/splunk/bin/./splunk restart
 ```
 **4-** RITA Data in Splunk:
-```bash
+From the search and reporting app, run the following command after the RITA file is downloaded.
+```
 | inputlookup rita_intel
 ```
