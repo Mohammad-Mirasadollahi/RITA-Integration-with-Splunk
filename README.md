@@ -87,6 +87,8 @@ rm -rf TA-RITA-Splunk.tar.gz
 ```
 /opt/splunk/bin/./splunk restart
 ```
+**Note:** Change the app permission to `all apps (system)`
+
 **4-** RITA Data in Splunk:\
 From the search and reporting app, run the following command after the RITA file is downloaded.
 ```
