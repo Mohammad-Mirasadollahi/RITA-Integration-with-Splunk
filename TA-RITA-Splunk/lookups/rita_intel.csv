@@ -1,0 +1,1 @@
+Severity,src_ip,dest_ip,FQDN,Beacon_Score,Strobe,Total_Duration,Long_Connection_Score,Subdomains,C2_Over_DNS_Score,ThreatIntel,Prevalence,First_Seen,Missing_Host_Header,Connection_Count,Total_Byte,Port:Proto:Service,Modifiers
