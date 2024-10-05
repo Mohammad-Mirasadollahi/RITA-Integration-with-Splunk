@@ -86,3 +86,7 @@ rm -rf TA-RITA-Splunk.tar.gz
 ```bash
 /opt/splunk/bin/./splunk restart
 ```
+**4-** RITA Data in Splunk
+```bash
+| inputlookup rita_intel
+```
